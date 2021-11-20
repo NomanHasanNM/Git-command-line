@@ -1,0 +1,253 @@
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~
+$ pwd
+/c/Users/IT LIFE
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~
+$ cd desktop
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop
+$ mkdir notes-2
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop
+$ cd notes-2
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2
+$ git init
+Initialized empty Git repository in C:/Users/IT LIFE/Desktop/notes-2/.git/
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ ls -a
+./  ../  .git/
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ touch test1.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git add .
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   test1.txt
+
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git commit -m "first commit"
+[master (root-commit) 37922e2] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test1.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git log
+commit 37922e26e553218d10bd55deda4063328f120712 (HEAD -> master)
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:03:03 2021 +0600
+
+    first commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git show
+commit 37922e26e553218d10bd55deda4063328f120712 (HEAD -> master)
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:03:03 2021 +0600
+
+    first commit
+
+diff --git a/test1.txt b/test1.txt
+new file mode 100644
+index 0000000..4c32064
+--- /dev/null
++++ b/test1.txt
+@@ -0,0 +1 @@
++SOme text is here now.
+\ No newline at end of file
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git --oneline
+unknown option: --oneline
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git log --oneline
+37922e2 (HEAD -> master) first commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ touch test2.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git add .
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   test2.txt
+
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git checkout test2.txt
+Updated 1 path from the index
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git commit -m "second commit"
+[master 98fcfdc] second commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test2.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git log
+commit 98fcfdcd7dad6643cffc2d05b50dab0adf90cc16 (HEAD -> master)
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:12:40 2021 +0600
+
+    second commit
+
+commit 37922e26e553218d10bd55deda4063328f120712
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:03:03 2021 +0600
+
+    first commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ touch test3.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test3.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git add .
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git commit -m "third commit"
+[master 4339674] third commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test3.txt
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git log
+commit 4339674103f8bc8b5aa168cf65b2a621b7a75482 (HEAD -> master)
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:16:02 2021 +0600
+
+    third commit
+
+commit 98fcfdcd7dad6643cffc2d05b50dab0adf90cc16
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:12:40 2021 +0600
+
+    second commit
+
+commit 37922e26e553218d10bd55deda4063328f120712
+Author: Md.Noman Hasan <nomanhasan2226@gmail.com>
+Date:   Sat Nov 20 16:03:03 2021 +0600
+
+    first commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git log --oneline
+4339674 (HEAD -> master) third commit
+98fcfdc second commit
+37922e2 first commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git show ^C
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 (master)
+$ git checkout 98fcfdc
+Note: switching to '98fcfdc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 98fcfdc second commit
+
+IT LIFE@DESKTOP-QJCPPPI MINGW64 ~/desktop/notes-2 ((98fcfdc...))
+$ git checkout master
+Previous HEAD position was 98fcfdc second commit
+Switched to branch 'master'
+
