@@ -1,2 +1,2 @@
 # Git-command-line
-Here is command line in git.
+Here is command line of git.
